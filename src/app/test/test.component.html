@@ -1,0 +1,21 @@
+<div style="text-align: center">
+  <h1>
+    {{title}}
+  </h1>
+</div>
+<div> Months:
+  <select (change)="changeMonth($event)">
+    <option *ngFor="let i of months">{{i}}</option>
+  </select>
+</div>
+<div>
+  <span *ngIf="isAvailable; then condition1 else condition2">This is available</span>
+  <ng-template #condition1>This is available</ng-template>
+  <ng-template #condition2>This is not available</ng-template>
+</div>
+<button (click)="clicked($event)">
+  Click
+</button>
+<div>
+  <span appTest>{{innerOne}}</span>
+</div>
