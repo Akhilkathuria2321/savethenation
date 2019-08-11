@@ -21,6 +21,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { ArticledetailComponent } from './articledetail/articledetail.component';
 import { HomeComponent } from './home/home.component';
 import { ParallaxComponent } from './parallax/parallax.component';
+import { TestWidgetsComponent } from './test-widgets/test-widgets.component';
 
 @NgModule({
   declarations: [
@@ -37,7 +38,8 @@ import { ParallaxComponent } from './parallax/parallax.component';
     ArticleComponent,
     ArticledetailComponent,
     HomeComponent,
-    ParallaxComponent
+    ParallaxComponent,
+    TestWidgetsComponent
   ],
   imports: [
     BrowserModule,
